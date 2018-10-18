@@ -357,6 +357,13 @@ strong {
   font-weight: 300;
 }
 
+@media(min-width: 992px) {
+  .footer h3 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+}
+
 .footer h3+* {
   margin-top: 25px;
 }

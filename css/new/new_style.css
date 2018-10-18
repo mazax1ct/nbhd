@@ -269,6 +269,7 @@ strong {
   .well h3 {
     font-size: 45px;
     line-height: 65px;
+    margin-top: -15px;
   }
 }
 

@@ -186,28 +186,25 @@ strong {
   color: #fff;
   font-weight: 700;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 1;
   margin-bottom: 20px;
 }
 
 @media (min-width:480px) {
   .countdown-amount {
     font-size: 45px;
-    line-height: 34px;
   }
 }
 
 @media (min-width:768px) {
   .countdown-amount {
     font-size: 80px;
-    line-height: 60px;
   }
 }
 
 @media (min-width:992px) {
   .countdown-amount {
     font-size: 120px;
-    line-height: 100px;
   }
 }
 

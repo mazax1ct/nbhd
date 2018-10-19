@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" minimum-scale="1">
   <meta name="format-detection" content="telephone=no">
 
   <link rel="canonical" href="https://thenbhd2019.ru/">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script async="async" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-date-countdown" src="https://cdn.ampproject.org/v0/amp-date-countdown-0.1.js"></script>
-  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
   <script async="async" custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
 </head>
@@ -31,7 +31,7 @@
       <div class="header_middle-bar">
         <h2>The Neighbourhood <span>14 февраля 2019 ДС Мегаспорт</span></h2>
         <div class='countdown'></div>
-        <amp-date-countdown end-date="2019-02-14T00:00:00+03:00" locale="ru">
+        <amp-date-countdown end-date="2019-02-14T00:00:00+03:00" locale="ru" layout="responsive">
           <template type="amp-mustache">
             <div class="countdown is-countdown">
               <span class="countdown-row countdown-show4">
@@ -57,9 +57,7 @@
         </amp-date-countdown>
       </div>
       <div class="header_bottom-bar">
-        <form id="subscribe-form" class="subscribe-form">
-          <a class="button" data-type="submit" href="#tickets">Билеты</a>
-        </form>
+        <a class="button" data-type="submit" href="#tickets">Билеты</a>
       </div>
     </div>
   </header>

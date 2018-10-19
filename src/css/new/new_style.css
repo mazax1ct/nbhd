@@ -390,13 +390,20 @@ strong {
   background: #010101;
   border: 1px solid transparent;
   position: fixed;
-  right: 66px;
-  bottom: 180px;
+  right: 10px;
+  bottom: 10px;
   display: none;
   overflow: hidden;
   text-align: center;
   text-decoration: none;
   z-index: 20;
+}
+
+@media(min-width: 1200px) {
+  .toTop {
+    right: 60px;
+    bottom: 60px;
+  }
 }
 
 .toTop.is-active {

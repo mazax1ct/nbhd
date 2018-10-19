@@ -62,14 +62,18 @@ gulp.task("html:build", function() {
     .src(path.src.html)
     .pipe(rigger())
     .pipe(gulp.dest(path.build.html))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
     .pipe(gulp.dest(path.build.js))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 gulp.task("style:build", function() {
@@ -86,7 +90,9 @@ gulp.task("style:build", function() {
     )
     .pipe(cleanCSS())
     .pipe(gulp.dest(path.build.css))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 gulp.task("image:build", function() {
@@ -95,13 +101,19 @@ gulp.task("image:build", function() {
     .pipe(
       imagemin({
         progressive: true,
-        svgoPlugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+        svgoPlugins: [{
+          removeViewBox: false
+        }, {
+          cleanupIDs: false
+        }],
         use: [pngquant()],
         interlaced: true
       })
     )
     .pipe(gulp.dest(path.build.img))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 gulp.task("fonts:build", function() {
